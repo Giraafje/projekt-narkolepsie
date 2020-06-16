@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Webová stránka pro primární sebediagnostiku narkolepsie.">
+<meta name="author" content="Petra Pavlisová, Lenka Erbenová">
+<title>Najdi specialistu</title>
+
+<!-- Google Font: Lora -->
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Google Font: Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Google Font: Roboto -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<!-- Bootstrap styly -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- naše CSS styly -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+ 
+
+<body>
+<!-- Main menu -->
+<nav class="navbar fixed-top navbar-expand-md navbar-dark py-0">
+	<div class="container">
+		<a class="navbar-brand" href="#domu">
+			<img src="images/spaci_logo_dark-transparent.png" width="80" height="80" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mojeNavigace" aria-controls="mojeNavigace" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="mojeNavigace">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="#centra">Domů</a></li>
+				<li class="nav-item"><a class="nav-link" href="#narkolepsie">Co je narkolepsie</a></li>
+				<li class="nav-item"><a class="nav-link" href="#test">Otestuj se</a></li>
+				<li class="nav-item"><a class="nav-link" href="#kontakt">Zeptej se</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Sekce Najdi specialistu -->
+<section class="sekce">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10 text-left">
+				<h1>Spánkové laboratoře</h1>
+				<h2>Specializovaná pracoviště</h2>
+				<p>V České republice je celkem 6 specializovaných pracovišť, které se zaměřují na narkolepsii, umí ji diagnostikovat a léčit.</p>
+				<p>Vyšetření na narkolepsii probíhá formou dvoudenní hospitalizace, kdy se monitoruje jednak noční spánek tzv. noční polysomnografie, a jednak denní spánek tzv. test mnohačetné latence usnutí. Vše doplňují ještě další menší vyšetření podle indikace lékaře a potřeby. </p>
+				<p>Pokud máte pocit, že byste mohli mít narkolepsii a vaše podezření potvrdil i náš test, vytiskněte si jeho výsledek a navštivte svého neurologa (případně praktického lékaře.) Předložte mu výsledný výpis a požádejte, aby vám napsal doporučení na vyšetření ve spánkové laboratoři. Tato specializovaná centra jsou totiž velmi vytížená a bez doporučení ošetřujícího lékaře se tam v podstatě nemáte šanci dostat. Zejména zdůrazněte, aby ve zprávě zdůraznil podezření na narkolepsii.</p>
+				<p>U některých stavů je nutné dojíždět pouze do VFN v Praze, jelikož jako jediná může předepisovat některé léky.</p>
+				<h2>Najdi specialistu</h2>
+        <p>Projdi mapu odborných pracovišť a zjisti, kde jsou v ČR spánkové laboratoře, které se specializují právě na narkolepsii.
+        </p> 
+			</div>
+		</div>
+	</div>
+</section>
+<!-- sekce mapa -->
+<section>
+	<div class="map">
+		<div class="container">
+			<div id="mapa">
+				<script src="https://api.mapy.cz/loader.js"></script>
+				<script>
+					Loader.load();
+				</script>
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- footer -->
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="footer-author col-sm-8">
+					<p>&copy;2020, Czechitas, Petra Pavlisová & Lenka Erbenová.</p>
+				</div>
+	</div><!-- END footer -->
+
+
+	<!-- Optional JavaScript -->
+	<script src="index.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

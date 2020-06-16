@@ -5,10 +5,9 @@ sm: (min-width: 576px) and (max-width: 767px)
 md: (min-width: 768px) and (max-width: 991px)
 lg: (min-width: 992px) and (max-width: 1199px)
 xl: (min-width: 1200px)
-
 Barvy
 text: #26292c
-dark-blue: #0c2357
+dark-blue: #06153e
 light-blue: #363a69
 orange: #f57c00
 orange darker: #ef6c00
@@ -17,7 +16,6 @@ white-grey: #fafafa
 
 html {
   box-sizing: border-box;
-  background-color: #fafafa;
 }
 
 *,
@@ -29,7 +27,6 @@ html {
 body {
   display: block;
   margin: auto;
-  max-width: 1600px;
   color: #26292c;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -37,6 +34,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5em;
+  background-color: #fafafa;
 }
 
 /* TYPOGRAPHY */
@@ -46,7 +44,6 @@ h1 {
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 2px #0c2357;
 }
 
 .section-header p {
@@ -55,11 +52,10 @@ h1 {
   font-weight: 400;
   line-height: 1.5em;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 2px #0c2357;
 }
 
 h2 {
-  color: #0c2357;
+  color: #363a69;
   font-size: 28px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -74,45 +70,60 @@ p a:hover {
 }
 
 /* MAIN MENU */
-.navba-light .navbar-collapse {
-  background-color: white;
+.navbar-dark {
+  background-color: #06153e;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #0c2357;
+.navbar-dark .navbar-brand {
+  margin-left: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
   padding: 1rem;
   font-weight: 500;
   cursor: pointer;
+  margin-right: 30px;
 }
 
-.navbar-light .navbar-brand img {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #f57c00;
 }
 
 /* HEADER */
 /* SECTION */
-.section {
-  padding: 45px 15px 15px;
-}
-
 .section-header {
-  height: 550px;
-  background-image: url(../images/dark-blue-watercolor-header.jpg);
+  width: 100%;
+  background-image: url(../images/dark-blue-watercolor-2.jpg);
   background-repeat: no-repeat;
+  background-position: bottom left;
   background-size: cover;
-  background-position: bottom right;
-  background-color: #0c2357;
+  background-color: #06153e;
   color: white;
 }
 
 .section-title {
-  background-color: #0c2357;
+  background-color: #363a69;
   color: white;
+}
+
+.section-header,
+.section-title,
+.section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-header,
+.section-title {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .content-header {
@@ -127,7 +138,7 @@ p a:hover {
   cursor: pointer;
   color: white;
   font-weight: 700;
-  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.38);
   background-color: #f57c00;
   border-color: #f57c00;
   padding: 8px 34px 8px 34px;
@@ -146,28 +157,18 @@ p a:hover {
   border-color: #ef6c00;
 }
 
-img {
-  margin-top: 20px;
-}
-
 /* FOOTER */
 #footer {
-  background-image: url(../images/dark-blue-watercolor-bar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
-  background-color: #0c2357;
+  background-color: #06153e;
   color: white;
   padding-top: 15px;
-  margin-top: 45px;
   font-size: 16px;
   text-align: center;
-  text-shadow: 1px 1px 2px #0c2357;
 }
 
 @media (min-width: 768px) {
   body {
-    font-size: 18px;
+    max-width: 1600px;
   }
 
   /* TYPOGRAPHY */
@@ -183,33 +184,36 @@ img {
     margin-bottom: 40px;
   }
 
-  /* MENU */
-  .navbar-light .navbar-brand {
-    padding-left: 50px;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    padding-right: 50px;
-  }
-
   /* HEADER */
   /* SECTION */
   .section-header {
     height: 800px;
     background-image: url(../images/falling-asleep-no-background.png),
-      url(../images/dark-blue-watercolor-header.jpg);
+      url(../images/dark-blue-watercolor-2.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top 20% right 5%, bottom right;
-    background-size: 50%, cover;
-    background-repeat: no-repeat;
-    background-color: #0c2357;
+    background-position: top 30% right 5%, bottom left;
+    background-size: 48%, cover;
   }
 
   .content-header {
-    padding-top: 10%;
+    padding-top: 120px;
   }
 
-  .content-title {
-    padding-top: 10%;
+  .section img {
+    height: 300px;
   }
+}
+
+#mapa {
+  width: 65vw;
+  height: 80vh;
+  margin: 30px auto;
+}
+
+.sekce {
+  margin-top: 120px;
+}
+
+.footer {
+  display: block;
 }
